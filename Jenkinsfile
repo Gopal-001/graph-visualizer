@@ -5,7 +5,12 @@ pipeline {
   stages{
     stage('build'){
       steps{
-          sh "npm start"
+          sh "npm build"
+      }
+    }
+    stage('start'){
+      steps{
+        sh "npm start"
       }
     }
   }
